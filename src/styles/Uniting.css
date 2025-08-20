@@ -1,0 +1,288 @@
+/* Uniting.css */
+.CommunityJoinGlobal {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--collor-00);
+}
+
+.CommunityJoinTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--collor-04);
+}
+
+.CommunityJoinContent {
+    width: 100%;
+    background-color: var(--collor-00);
+    padding: 20px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.CommunityJoinSection {
+    border: 1px solid var(--collor-05);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--collor-00);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.CommunityJoinSection:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.CommunitySectionTitle {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--collor-04);
+    margin-bottom: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--collor-05);
+}
+
+.CommunityLinksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.CommunityLinkBox {
+    background-color: var(--collor-02);
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.CommunityLinkBox:hover {
+    background-color: var(--collor-01);
+    transform: translateX(5px);
+}
+
+.CommunityLinkDescription {
+    font-size: 0.95rem;
+    margin: 0;
+    color: var(--collor-00);
+    text-align: center;
+}
+
+.CommunityLink {
+    text-decoration: none;
+    color: var(--collor-06);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.CommunityLink:hover {
+    color: var(--collor-04);
+}
+
+.CommunityForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CommunityInputBox {
+    border: 1px solid var(--collor-02);
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--collor-00);
+    transition: border-color 0.3s ease;
+}
+
+.CommunityInputBox:focus-within {
+    border-color: var(--collor-03);
+}
+
+.CommunityInput, .CommunityTextarea {
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: var(--collor-00);
+    color: var(--collor-04);
+    font-size: 0.95rem;
+}
+
+.CommunityTextarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.CommunitySubmitBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--collor-02);
+    color: var(--collor-00);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.CommunitySubmitBtn:hover {
+    background-color: var(--collor-03);
+    transform: scale(1.05);
+}
+
+.CommunityRoadmapsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.CommunityRoadmapBox {
+    background-color: var(--collor-02);
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CommunityRoadmapBox:hover {
+    background-color: var(--collor-01);
+    transform: translateY(-2px);
+}
+
+.CommunityRoadmapLink {
+    text-decoration: none;
+    color: var(--collor-00);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.CommunityRoadmapLink:hover {
+    color: var(--collor-04);
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1024px) {
+    .CommunityJoinContent {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        padding: 20px 4%;
+    }
+    
+    .CommunityJoinTitle {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .CommunityJoinGlobal {
+        padding: 30px 0;
+    }
+    
+    .CommunityJoinTitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        padding: 0 15px;
+    }
+    
+    .CommunityJoinContent {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+    
+    .CommunitySectionTitle {
+        font-size: 1.3rem;
+    }
+    
+    .CommunityLinkDescription {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .CommunityJoinTitle {
+        font-size: 1.7rem;
+    }
+    
+    .CommunityJoinContent {
+        padding: 20px 15px;
+        gap: 1.2rem;
+    }
+    
+    .CommunityJoinSection {
+        padding: 15px;
+    }
+    
+    .CommunitySectionTitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .CommunityLinkBox {
+        padding: 10px 12px;
+    }
+    
+    .CommunityLinkDescription {
+        font-size: 0.85rem;
+    }
+    
+    .CommunityInput, .CommunityTextarea {
+        font-size: 0.9rem;
+    }
+    
+    .CommunityRoadmapBox {
+        padding: 12px;
+    }
+    
+    .CommunityRoadmapLink {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animações para carregamento */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.CommunityJoinSection {
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+.CommunityJoinSection:nth-child(1) { animation-delay: 0.1s; }
+.CommunityJoinSection:nth-child(2) { animation-delay: 0.2s; }
+.CommunityJoinSection:nth-child(3) { animation-delay: 0.3s; }
+
+/* Melhorias de acessibilidade */
+.CommunityInput::placeholder,
+.CommunityTextarea::placeholder {
+    color: var(--collor-04);
+    opacity: 0.7;
+}
+
+.CommunityLink:focus,
+.CommunityRoadmapLink:focus,
+.CommunitySubmitBtn:focus {
+    outline: 2px solid var(--collor-03);
+    outline-offset: 2px;
+}
