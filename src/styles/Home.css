@@ -1,6 +1,6 @@
 .Config-Global-Home {
     width: 100%;
-    padding-top: 90px; /* desktop padrão */
+    padding-top: 80px; /* desktop padrão */
 
     .Division-Config-Home {
         display: flex;

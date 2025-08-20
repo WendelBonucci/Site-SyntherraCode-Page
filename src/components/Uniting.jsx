@@ -8,14 +8,14 @@ export default function Join() {
         name: "",
         message: ""
     });
-    
+
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
         });
     };
-    
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -54,7 +54,7 @@ export default function Join() {
         {
             name: "LinkedIn",
             icon: <FaLinkedin />,
-            url: "#",
+            url: "https://www.linkedin.com/in/wendel-bonucci-desenvolvedor-8b2aa237a/",
             description: "Dê uma olhada no nosso"
         },
         {
@@ -91,9 +91,9 @@ export default function Join() {
                         {socialLinks.map((social, index) => (
                             <div className='CommunityLinkBox' key={index}>
                                 <p className='CommunityLinkDescription'>
-                                    {social.description} <a 
-                                        className='CommunityLink' 
-                                        href={social.url} 
+                                    {social.description} <a
+                                        className='CommunityLink'
+                                        href={social.url}
                                         target='_blank'
                                         rel="noopener noreferrer"
                                     >
