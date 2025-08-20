@@ -30,10 +30,10 @@ function Header() {
 
           <div className='Content-Btn-Header'>
             <div className='Dimension-Btn-H'>
-              <button className='Btn-Header'>LinkedIn</button>
+              <button className='Btn-Header'><a className='LinkBtnHeader' href="https://www.linkedin.com/in/wendel-bonucci-desenvolvedor-8b2aa237a/" target='_blank'>LinkedIn</a></button>
             </div>
             <div className='Dimension-Btn-H'>
-              <button className='Btn-Header'>PDF's</button>
+              <button className='Btn-Header'><a className='LinkBtnHeader' href="#">PDF's</a></button>
             </div>
           </div>
 
@@ -55,7 +55,7 @@ function Header() {
           </div>
           <button className="sidebar-close" onClick={toggleSidebar}>×</button>
         </div>
-        
+
         <nav className="sidebar-nav">
           <ul>
             <li><a href="#Inicio" onClick={toggleSidebar}>Home</a></li>
@@ -64,10 +64,10 @@ function Header() {
             <li><a href="#Junte-se" onClick={toggleSidebar}>Junte-se</a></li>
           </ul>
         </nav>
-        
+
         <div className="sidebar-buttons">
-          <button className='sidebar-btn'>LinkedIn</button>
-          <button className='sidebar-btn'>PDF's</button>
+          <button className='sidebar-btn'><a className='LinkBtnHeader' href="https://www.linkedin.com/in/wendel-bonucci-desenvolvedor-8b2aa237a/" target='_blank'>LinkedIn</a></button>
+          <button className='sidebar-btn'><a className='LinkBtnHeader' href="#">PDF's</a></button>
         </div>
       </div>
     </>
